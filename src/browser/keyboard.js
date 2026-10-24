@@ -2,25 +2,25 @@ import Controller from "../controller.js";
 
 // Mapping keyboard code to [controller, button]
 const KEYS = {
-  88: [1, Controller.BUTTON_A, "X"], // X
-  89: [1, Controller.BUTTON_B, "Y"], // Y (Central European keyboard)
-  90: [1, Controller.BUTTON_B, "Z"], // Z
+  75: [1, Controller.BUTTON_A, "K"], // K
+  // 89: [1, Controller.BUTTON_B, "Y"], // Y (Central European keyboard)
+  74: [1, Controller.BUTTON_B, "J"], // J
   17: [1, Controller.BUTTON_SELECT, "Right Ctrl"], // Right Ctrl
   13: [1, Controller.BUTTON_START, "Enter"], // Enter
-  38: [1, Controller.BUTTON_UP, "Up"], // Up
-  40: [1, Controller.BUTTON_DOWN, "Down"], // Down
-  37: [1, Controller.BUTTON_LEFT, "Left"], // Left
-  39: [1, Controller.BUTTON_RIGHT, "Right"], // Right
-  83: [1, Controller.BUTTON_TURBO_A, "S"], // S
-  65: [1, Controller.BUTTON_TURBO_B, "A"], // A
-  103: [2, Controller.BUTTON_A, "Num-7"], // Num-7
-  105: [2, Controller.BUTTON_B, "Num-9"], // Num-9
+  87: [1, Controller.BUTTON_UP, "W"], // W
+  83: [1, Controller.BUTTON_DOWN, "S"], // S
+  65: [1, Controller.BUTTON_LEFT, "A"], // A
+  68: [1, Controller.BUTTON_RIGHT, "D"], // D
+  73: [1, Controller.BUTTON_TURBO_A, "I"], // I
+  85: [1, Controller.BUTTON_TURBO_B, "U"], // U
+  98: [2, Controller.BUTTON_A, "Num-2"], // Num-2
+  97: [2, Controller.BUTTON_B, "Num-1"], // Num-1
   99: [2, Controller.BUTTON_SELECT, "Num-3"], // Num-3
-  97: [2, Controller.BUTTON_START, "Num-1"], // Num-1
-  104: [2, Controller.BUTTON_UP, "Num-8"], // Num-8
-  98: [2, Controller.BUTTON_DOWN, "Num-2"], // Num-2
-  100: [2, Controller.BUTTON_LEFT, "Num-4"], // Num-4
-  102: [2, Controller.BUTTON_RIGHT, "Num-6"], // Num-6
+  108: [2, Controller.BUTTON_START, "↵"], // ↵
+  38: [2, Controller.BUTTON_UP, "↑"], // ↑
+  40: [2, Controller.BUTTON_DOWN, "↓"], // ↓
+  37: [2, Controller.BUTTON_LEFT, "←"], // ←
+  39: [2, Controller.BUTTON_RIGHT, "→"] // →
 };
 
 export default class KeyboardController {

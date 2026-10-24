@@ -42,7 +42,7 @@ class RunPage extends Component {
         >
           <div style={{ width: "200px" }}>
             <Link to="/" className="block py-2 px-2 no-underline">
-              &lsaquo; Back
+              &lsaquo; 返回
             </Link>
           </div>
           <div className="mx-auto">
@@ -57,14 +57,14 @@ class RunPage extends Component {
               className="border border-white text-white px-3 py-1 bg-transparent hover:bg-white hover:text-black mr-3 cursor-pointer disabled:opacity-50 disabled:cursor-default disabled:hover:bg-transparent disabled:hover:text-white"
               disabled={!!this.state.error}
             >
-              Controls
+              键盘设置
             </button>
             <button
               onClick={this.handlePauseResume}
               className="border border-white text-white px-3 py-1 bg-transparent hover:bg-white hover:text-black cursor-pointer disabled:opacity-50 disabled:cursor-default disabled:hover:bg-transparent disabled:hover:text-white"
               disabled={!this.state.running}
             >
-              {this.state.paused ? "Resume" : "Pause"}
+              {this.state.paused ? "恢复" : "暂停"}
             </button>
           </div>
         </nav>

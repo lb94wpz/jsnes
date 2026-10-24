@@ -154,7 +154,7 @@ class ControlsModal extends Component {
       >
         <div className="bg-black border border-white w-full max-w-lg mx-4 font-mono">
           <div className="flex items-center justify-between px-4 py-3">
-            <h5 className="text-lg font-normal m-0">Controls</h5>
+            <h5 className="text-lg font-normal m-0">键盘设置</h5>
             <button
               onClick={this.props.toggle}
               className="text-white text-2xl leading-none bg-transparent border-none cursor-pointer"
@@ -168,10 +168,10 @@ class ControlsModal extends Component {
               <thead>
                 <tr>
                   <th className="text-left py-2 border-b border-white">
-                    Button
+                    按键
                   </th>
                   <th className="text-left py-2 border-b border-white">
-                    Player 1
+                    玩家一
                     <img
                       className="w-10 h-10 -mt-5 inline ml-1"
                       src={this.state.controllerIcon[0]}
@@ -179,7 +179,7 @@ class ControlsModal extends Component {
                     />
                   </th>
                   <th className="text-left py-2 border-b border-white">
-                    Player 2
+                    玩家二
                     <img
                       className="w-10 h-10 -mt-5 inline ml-1"
                       src={this.state.controllerIcon[1]}
@@ -190,7 +190,7 @@ class ControlsModal extends Component {
               </thead>
               <tbody>
                 <ControlMapperRow
-                  buttonName="Left"
+                  buttonName="左"
                   currentPromptButton={this.state.currentPromptButton}
                   button={Controller.BUTTON_LEFT}
                   prevButton={Controller.BUTTON_SELECT}
@@ -199,7 +199,7 @@ class ControlsModal extends Component {
                   gamepadConfig={this.state.gamepadConfig}
                 />
                 <ControlMapperRow
-                  buttonName="Right"
+                  buttonName="右"
                   currentPromptButton={this.state.currentPromptButton}
                   button={Controller.BUTTON_RIGHT}
                   prevButton={Controller.BUTTON_LEFT}
@@ -208,7 +208,7 @@ class ControlsModal extends Component {
                   gamepadConfig={this.state.gamepadConfig}
                 />
                 <ControlMapperRow
-                  buttonName="Up"
+                  buttonName="上"
                   currentPromptButton={this.state.currentPromptButton}
                   button={Controller.BUTTON_UP}
                   prevButton={Controller.BUTTON_RIGHT}
@@ -217,7 +217,7 @@ class ControlsModal extends Component {
                   gamepadConfig={this.state.gamepadConfig}
                 />
                 <ControlMapperRow
-                  buttonName="Down"
+                  buttonName="下"
                   currentPromptButton={this.state.currentPromptButton}
                   button={Controller.BUTTON_DOWN}
                   prevButton={Controller.BUTTON_UP}
@@ -262,7 +262,7 @@ class ControlsModal extends Component {
                   gamepadConfig={this.state.gamepadConfig}
                 />
                 <ControlMapperRow
-                  buttonName="Start"
+                  buttonName="开始"
                   currentPromptButton={this.state.currentPromptButton}
                   button={Controller.BUTTON_START}
                   prevButton={Controller.BUTTON_TURBO_B}
@@ -271,7 +271,7 @@ class ControlsModal extends Component {
                   gamepadConfig={this.state.gamepadConfig}
                 />
                 <ControlMapperRow
-                  buttonName="Select"
+                  buttonName="切换"
                   currentPromptButton={this.state.currentPromptButton}
                   button={Controller.BUTTON_SELECT}
                   prevButton={Controller.BUTTON_START}
@@ -288,7 +288,7 @@ class ControlsModal extends Component {
               onClick={this.props.toggle}
               className="border border-white text-white px-3 py-1 bg-transparent hover:bg-white hover:text-black cursor-pointer"
             >
-              Close
+              关闭
             </button>
           </div>
         </div>
